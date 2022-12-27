@@ -2,7 +2,7 @@ from sklearn.neural_network import MLPClassifier
 import pandas as pd
 #Data base : Gerbang Logika AND
 #Membaca data dari file
-FileDB = 'logikaand.csv'
+FileDB = 'Database.txt'
 Database = pd.read_csv(FileDB, sep=",", header=0)
 print ("---------------------")
 print (Database)
@@ -21,7 +21,16 @@ clf.fit(x,y)
 #Prediksi
 print("LOGIKA AND METODE Artificial Neural Network (ANN)")
 print("Logika = Prediksi")
-print("0 0 = ", clf.predict([[0, 0]]))
-print("0 1 = ", clf.predict([[0, 1]]))
-print("1 0 = ", clf.predict([[1, 0]]))
-print("1 1 = ", clf.predict([[1, 1]]))
+print("1 10 = ", clf.predict([[0.36787941633460847]]))
+print("2 20 = ", clf.predict([[0.045789196146081367]]))
+print("3 30 = ", clf.predict([[0.0006170591435823976]]))
+print("4 40 = ", clf.predict([[9.56605389460488e-07]]))
+print("2 10 = ")clf.predict([[0.04578911676242501]])
+print("3 10 = ")clf.predict([[0.0006170497008659222]])
+print("4 10 = ")clf.predict([[9.565505519162414e-07]])
+print("5 10 = ")clf.predict([[1.8054361027771023e-10]])
+print("6 20 = ")clf.predict([[4.2912113620677254e-15]])
+print("7 20 = ")clf.predict([[1.3107557938098917e-20]])
+print("8 10 = ")clf.predict([[5.212389671966898e-27]])
+print("9 20 = ")([[2.7223538935493817e-34]])
+print("10 20 = ")clf.predict([[1.8786994509649057e-42]])
