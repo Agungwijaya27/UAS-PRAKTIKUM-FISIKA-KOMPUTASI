@@ -1,1 +1,1 @@
-# UAS-PRAKTIKUM-FISIKA-KOMPUTASI
+# Analisis Gerak Parabola 
